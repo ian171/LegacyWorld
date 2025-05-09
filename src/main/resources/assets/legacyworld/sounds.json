@@ -1,0 +1,8 @@
+{
+  "block_place":{
+    "subtitle": "sounds.legacyworld.player_run_on_dirty_stone",
+    "sounds": [
+      "legacyworld:player_run"
+    ]
+  }
+}

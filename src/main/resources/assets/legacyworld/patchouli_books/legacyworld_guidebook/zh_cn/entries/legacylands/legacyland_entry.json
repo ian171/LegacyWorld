@@ -1,0 +1,20 @@
+{
+  "name": "Legacy Land",
+  "icon": "minecraft:writable_book",
+  "category": "legacyworld:legacylands_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "欢迎来到遗迹之地"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "这里将告诉你如何开始"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "legacyworld:iron_ingot",
+      "title": "铁锭"
+    }
+  ]
+}

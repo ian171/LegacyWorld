@@ -1,0 +1,15 @@
+{
+  "name": "Legacy Land",
+  "icon": "minecraft:writable_book",
+  "category": "legacyworld_guide:legacylands_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "欢迎打开遗迹之地书"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "这里将告诉你如何开始"
+    }
+  ]
+}

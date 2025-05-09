@@ -1,0 +1,11 @@
+{
+  "name": "Page01",
+  "icon": "minecraft:writable_book",
+  "category": "legacyworld:page01",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "page 01"
+    }
+  ]
+}
