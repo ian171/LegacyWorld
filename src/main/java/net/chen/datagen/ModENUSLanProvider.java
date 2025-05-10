@@ -1,5 +1,8 @@
 package net.chen.datagen;
 
+import net.chen.blocks.ModBlock;
+import net.chen.blocks.ModBlockEntities;
+import net.chen.items.ModItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -28,7 +31,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("item.legacyworld.raw_copper","粗铜");
         translationBuilder.add("item.legacyworld.copper_ingot","铜锭");
         translationBuilder.add("item.legacyworld.copper_stone","铜石");
-        translationBuilder.add("block.legacyworld.copper_ore","铜矿石");
+        translationBuilder.add(ModBlock.COOPER_ORE,"铜矿石");
         translationBuilder.add("item.legacyworld.copper_sword","铜剑");
         translationBuilder.add("item.legacyworld.iron_sword","铁剑");
         translationBuilder.add("item.legacyworld.raw_zinc","粗锌");
@@ -36,15 +39,20 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("item.legacyworld.zinc_stone","锌石");
         translationBuilder.add("block.legacyworld.zinc_ore","锌矿石");
         translationBuilder.add("item.legacyworld.raw_nickel","粗镍");
-        translationBuilder.add("item.legacyworld.nickel_ingot","镍锭");
-        translationBuilder.add("item.legacyworld.nickel_stone","镍石");
+        translationBuilder.add(ModItem.NICKEL_INGOT,"镍锭");
+        translationBuilder.add(ModItem.NICKEL_STONE,"镍石");
         //translationBuilder.add("block.legacyworld.nickel_ore","镍矿石");
-        translationBuilder.add("block.legacyworld.ore_washer","洗矿机");
-        translationBuilder.add("item.legacyworld.sulfur","硫磺");
-        //translationBuilder.add("block.legacyworld.sulfur_ore","硫磺矿石");
-        translationBuilder.add("item.legacyworld.sulphuric_acid_bottle","硫酸瓶");
-        translationBuilder.add("item.legacyworld.glass_bukkit","玻璃杯");
-        translationBuilder.add("block.legacyworld.sulphuric_acid","硫酸");
+        translationBuilder.add(ModBlock.ORE_WASHER,"洗矿机");
+        translationBuilder.add(ModItem.Sulfur,"硫磺");
+        translationBuilder.add(ModBlock.SULFUR_ORE,"硫磺矿石");
+
+        translationBuilder.add(ModItem.SULPHURIC_ACID_BOTTLE,"硫酸瓶");
+        translationBuilder.add(ModItem.GLASS_BUKKIT,"玻璃杯");
+        translationBuilder.add(ModBlock.H2SO4,"硫酸");
+        translationBuilder.add(ModBlock.Small_Chest,"small chest");
+        translationBuilder.add("container.chen.small_chest","小容器");
+        translationBuilder.add(ModItem.Saltpeter,"硝石");
+        translationBuilder.add(ModItem.Solvent,"助溶剂");
 
     }
 }

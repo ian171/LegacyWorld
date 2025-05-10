@@ -3,22 +3,16 @@ package net.chen.blocks;
 import net.chen.LegacyWorld;
 import net.chen.blocks.devices.Bin;
 import net.chen.blocks.devices.OreWasher;
+import net.chen.blocks.entity.blockentity.SmallChestBlock;
 import net.chen.blocks.fluid.ModFluid;
 import net.chen.blocks.ore.CopperOre;
 import net.chen.blocks.ore.IronOre;
 import net.chen.blocks.ore.NoSmokeCoal;
 import net.chen.blocks.stones.DirtyStone;
-import net.chen.items.ModItem;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.FluidBlock;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.DyeColor;
@@ -36,6 +30,7 @@ public class ModBlock {
     public static final Block SULFUR_ORE = register("sulfur_ore", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.YELLOW).strength(2.5f, 2.7f)));
     public static final Block H2SO4 = register("sulphuric_acid", new FluidBlock(ModFluid.H2SO4,AbstractBlock.Settings.create()));
     public static final Block H2SO4_FLOWING = register("sulphuric_acid_flowing", new FluidBlock(ModFluid.H2SO4_FLOWING,AbstractBlock.Settings.create()));
+    public static final Block Small_Chest = register("small_chest", new SmallChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST), () -> ModBlockEntities.SMALL_CHEST));
     public static void registerModBlocks(){
         LegacyWorld.LOGGER.info("Registering Blocks");
 
@@ -47,6 +42,7 @@ public class ModBlock {
             item.appendBlocks(Item.BLOCK_ITEMS, item);
         }
     }
+
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
         return Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, id), block);

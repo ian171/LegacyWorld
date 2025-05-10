@@ -46,6 +46,8 @@ public class LegacyItemGroup {
                         entries.add(ModBlock.SULFUR_ORE);
                         entries.add(ModItem.SULPHURIC_ACID_BOTTLE);
                         entries.add(ModItem.GLASS_BUKKIT);
+                        entries.add(ModItem.Saltpeter);
+                        entries.add(ModBlock.Small_Chest);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

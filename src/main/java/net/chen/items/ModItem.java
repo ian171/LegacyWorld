@@ -37,6 +37,8 @@ public class ModItem {
     public static final Item Sulfur = registerItems("sulfur",new Item(new Item.Settings()));
     public static final Item SULPHURIC_ACID_BOTTLE = registerItems("sulphuric_acid_bottle",new BucketItem(ModFluid.H2SO4,new Item.Settings().maxCount(1)));
     public static final Item GLASS_BUKKIT = registerItems("glass_bukkit",new GlassBukkit(new Item.Settings()));
+    public static final Item Saltpeter = registerItems("salt_peter",new Item(new Item.Settings()));
+    public static final Item Solvent = registerItems("solvent",new Item(new Item.Settings()));
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);
     }

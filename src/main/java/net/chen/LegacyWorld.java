@@ -1,15 +1,18 @@
 package net.chen;
 
+import com.sun.jna.platform.unix.X11;
 import net.chen.blocks.ModBlock;
+import net.chen.blocks.ModBlockEntities;
+import net.chen.blocks.fluid.ModFluid;
 import net.chen.items.ModItem;
 import net.chen.sounds.ModSoundsEvent;
 import net.chen.util.LegacyItemGroup;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.client.MinecraftClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.swing.*;
+import oshi.hardware.Display;
 
 public class LegacyWorld implements ModInitializer {
 	public static final String MOD_ID = "legacyworld";
@@ -33,6 +36,8 @@ public class LegacyWorld implements ModInitializer {
 		LOGGER.info("Blocks Loaded");
 		LegacyItemGroup.registerModItemGroups();
 		ModSoundsEvent.registerModSoundEvents();
+		ModBlockEntities.registerBlockEntities();
+		ModFluid.registerModFluids();
 //		try{
 //			Class.forName("vazkii.patchouli.Patchouli");
 //		} catch (ClassNotFoundException e) {
