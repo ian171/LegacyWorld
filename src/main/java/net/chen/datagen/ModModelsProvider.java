@@ -24,6 +24,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.BIN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ORE_WASHER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SULFUR_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4);
     }
 
     @Override
@@ -46,7 +47,7 @@ public class ModModelsProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItem.NICKEL_INGOT, Models.GENERATED);
             itemModelGenerator.register(ModItem.NICKEL_STONE, Models.GENERATED);
             itemModelGenerator.register(ModItem.Sulfur,Models.GENERATED);
-
-
+            itemModelGenerator.register(ModItem.SULPHURIC_ACID_BOTTLE,Models.GENERATED);
+            itemModelGenerator.register(ModItem.GLASS_BUKKIT,Models.GENERATED);
     }
 }

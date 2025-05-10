@@ -3,6 +3,7 @@ package net.chen.blocks;
 import net.chen.LegacyWorld;
 import net.chen.blocks.devices.Bin;
 import net.chen.blocks.devices.OreWasher;
+import net.chen.blocks.fluid.ModFluid;
 import net.chen.blocks.ore.CopperOre;
 import net.chen.blocks.ore.IronOre;
 import net.chen.blocks.ore.NoSmokeCoal;
@@ -12,6 +13,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
@@ -32,6 +34,7 @@ public class ModBlock {
     public static final Block BIN = register("bin", new Bin(AbstractBlock.Settings.create().mapColor(DyeColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     public static final Block ORE_WASHER = register("ore_washer", new OreWasher(AbstractBlock.Settings.create().mapColor(DyeColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     public static final Block SULFUR_ORE = register("sulfur_ore", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.YELLOW).strength(2.5f, 2.7f)));
+    public static final Block H2SO4 = register("sulphuric_acid", new FluidBlock(ModFluid.H2SO4,AbstractBlock.Settings.create()));
     public static void registerModBlocks(){
         LegacyWorld.LOGGER.info("Registering Blocks");
 

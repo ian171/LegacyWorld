@@ -31,6 +31,18 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("block.legacyworld.copper_ore","铜矿石");
         translationBuilder.add("item.legacyworld.copper_sword","铜剑");
         translationBuilder.add("item.legacyworld.iron_sword","铁剑");
-
+        translationBuilder.add("item.legacyworld.raw_zinc","粗锌");
+        translationBuilder.add("item.legacyworld.zinc_ingot","锌锭");
+        translationBuilder.add("item.legacyworld.zinc_stone","锌石");
+        translationBuilder.add("block.legacyworld.zinc_ore","锌矿石");
+        translationBuilder.add("item.legacyworld.raw_nickel","粗镍");
+        translationBuilder.add("item.legacyworld.nickel_ingot","镍锭");
+        translationBuilder.add("item.legacyworld.nickel_stone","镍石");
+        //translationBuilder.add("block.legacyworld.nickel_ore","镍矿石");
+        translationBuilder.add("block.legacyworld.ore_washer","洗矿机");
+        translationBuilder.add("item.legacyworld.sulfur","硫磺");
+        //translationBuilder.add("block.legacyworld.sulfur_ore","硫磺矿石");
+        translationBuilder.add("item.legacyworld.sulphuric_acid_bottle","硫酸瓶");
+        translationBuilder.add("item.legacyworld.glass_bukkit","玻璃杯");
     }
 }

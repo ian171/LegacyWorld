@@ -1,9 +1,11 @@
 package net.chen.items;
 
 import net.chen.LegacyWorld;
+import net.chen.items.acid.H2SO4;
 import net.chen.items.food.ModFoodComponents;
 import net.chen.items.ore.*;
 import net.chen.items.tools.Chisel;
+import net.chen.items.tools.GlassBukkit;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -32,6 +34,8 @@ public class ModItem {
     public static final Item COPPER_SWORD = registerItems("copper_sword",new SwordItem(ModToolMaterials.COPPER_INGOT,new Item.Settings()));
 
     public static final Item Sulfur = registerItems("sulfur",new Item(new Item.Settings()));
+    public static final Item SULPHURIC_ACID_BOTTLE = registerItems("sulphuric_acid_bottle",new H2SO4(new Item.Settings()));
+    public static final Item GLASS_BUKKIT = registerItems("glass_bukkit",new GlassBukkit(new Item.Settings()));
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);
     }
