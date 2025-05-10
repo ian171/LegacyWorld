@@ -34,7 +34,6 @@ public class ModItem {
 
     public static final Item IRON_SWORD = registerItems("iron_sword",new SwordItem(ModToolMaterials.IRON_INGOT,new Item.Settings()));
     public static final Item COPPER_SWORD = registerItems("copper_sword",new SwordItem(ModToolMaterials.COPPER_INGOT,new Item.Settings()));
-
     public static final Item Sulfur = registerItems("sulfur",new Item(new Item.Settings()));
     public static final Item SULPHURIC_ACID_BOTTLE = registerItems("sulphuric_acid_bottle",new BucketItem(ModFluid.H2SO4,new Item.Settings().maxCount(1)));
     public static final Item GLASS_BUKKIT = registerItems("glass_bukkit",new GlassBukkit(new Item.Settings()));

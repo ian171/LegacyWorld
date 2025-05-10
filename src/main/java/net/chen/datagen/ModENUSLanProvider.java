@@ -44,5 +44,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         //translationBuilder.add("block.legacyworld.sulfur_ore","硫磺矿石");
         translationBuilder.add("item.legacyworld.sulphuric_acid_bottle","硫酸瓶");
         translationBuilder.add("item.legacyworld.glass_bukkit","玻璃杯");
+        translationBuilder.add("block.legacyworld.sulphuric_acid","硫酸");
+
     }
 }

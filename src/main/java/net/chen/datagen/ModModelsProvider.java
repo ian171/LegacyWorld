@@ -25,6 +25,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ORE_WASHER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4_FLOWING);
     }
 
     @Override
