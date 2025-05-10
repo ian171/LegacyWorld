@@ -1,8 +1,12 @@
 package net.chen.blocks.fluid;
 
+import net.chen.blocks.ModBlock;
+import net.chen.items.ModItem;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.WaterFluid;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
@@ -10,28 +14,28 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldView;
 
-public abstract class AbstractOilFluid extends AbstractModFluid {
+public abstract class AbstractSulfuricAcidFluid extends AbstractModFluid {
     @Override
     public Fluid getStill() {
-        return null;
+        return ModFluid.H2SO4;
     }
 
     @Override
     public Fluid getFlowing() {
-        return null;
+        return ModFluid.H2SO4_FLOWING;
     }
 
     @Override
     public Item getBucketItem() {
-        return null;
+        return ModItem.SULPHURIC_ACID_BOTTLE;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return null;
+        return ModBlock.H2SO4.getDefaultState().with(FluidBlock.LEVEL, WaterFluid.getBlockStateLevel(state));
     }
 
-    public static class Flowing extends AbstractOilFluid {
+    public static class Flowing extends AbstractSulfuricAcidFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -69,7 +73,7 @@ public abstract class AbstractOilFluid extends AbstractModFluid {
         }
     }
 
-    public static class Still extends AbstractOilFluid {
+    public static class Still extends AbstractSulfuricAcidFluid {
 
         @Override
         protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {

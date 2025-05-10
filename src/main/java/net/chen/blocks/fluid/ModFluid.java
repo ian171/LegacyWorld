@@ -22,7 +22,8 @@ public class ModFluid {
             }
         }
     }
-    public static final FlowableFluid H2SO4 = register("H2SO4",new AbstractOilFluid.Flowing());
+    public static final FlowableFluid H2SO4 = register("sulphuric_acid",new AbstractSulfuricAcidFluid.Flowing());
+    public static final FlowableFluid H2SO4_FLOWING = register("sulphuric_acid_flowing",new AbstractSulfuricAcidFluid.Flowing());
     public static void registerModFluids() {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluid.H2SO4);
         LegacyWorld.LOGGER.info("Loaded Fluids");
