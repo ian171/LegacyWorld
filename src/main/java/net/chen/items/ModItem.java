@@ -30,6 +30,8 @@ public class ModItem {
 
     public static final Item IRON_SWORD = registerItems("iron_sword",new SwordItem(ModToolMaterials.IRON_INGOT,new Item.Settings()));
     public static final Item COPPER_SWORD = registerItems("copper_sword",new SwordItem(ModToolMaterials.COPPER_INGOT,new Item.Settings()));
+
+    public static final Item Sulfur = registerItems("sulfur",new Item(new Item.Settings()));
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);
     }

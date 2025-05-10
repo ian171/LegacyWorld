@@ -31,6 +31,7 @@ public class ModBlock {
     public static final Block ZINC_ORE = register("zinc_ore", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.YELLOW).strength(2.5f, 2.7f)));
     public static final Block BIN = register("bin", new Bin(AbstractBlock.Settings.create().mapColor(DyeColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     public static final Block ORE_WASHER = register("ore_washer", new OreWasher(AbstractBlock.Settings.create().mapColor(DyeColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
+    public static final Block SULFUR_ORE = register("sulfur_ore", new Block(AbstractBlock.Settings.create().mapColor(DyeColor.YELLOW).strength(2.5f, 2.7f)));
     public static void registerModBlocks(){
         LegacyWorld.LOGGER.info("Registering Blocks");
 

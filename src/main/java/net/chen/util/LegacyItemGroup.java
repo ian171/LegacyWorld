@@ -42,6 +42,8 @@ public class LegacyItemGroup {
                         entries.add(ModItem.RAW_NICKEL);
                         entries.add(ModItem.NICKEL_STONE);
                         entries.add(ModBlock.ORE_WASHER);
+                        entries.add(ModItem.Sulfur);
+                        entries.add(ModBlock.SULFUR_ORE);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

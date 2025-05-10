@@ -23,6 +23,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ZINC_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.BIN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ORE_WASHER);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SULFUR_ORE);
     }
 
     @Override
@@ -44,7 +45,7 @@ public class ModModelsProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItem.RAW_NICKEL, Models.GENERATED);
             itemModelGenerator.register(ModItem.NICKEL_INGOT, Models.GENERATED);
             itemModelGenerator.register(ModItem.NICKEL_STONE, Models.GENERATED);
-
+            itemModelGenerator.register(ModItem.Sulfur,Models.GENERATED);
 
 
     }
