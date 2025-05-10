@@ -1,6 +1,8 @@
 package net.chen.blocks.fluid;
 
 import net.chen.LegacyWorld;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -22,6 +24,7 @@ public class ModFluid {
     }
     public static final FlowableFluid H2SO4 = register("H2SO4",new AbstractOilFluid.Flowing());
     public static void registerModFluids() {
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluid.H2SO4);
         LegacyWorld.LOGGER.info("Loaded Fluids");
     }
 }
