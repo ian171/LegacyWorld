@@ -38,7 +38,12 @@ public class Chisel extends Item {
         PlayerEntity player = context.getPlayer();
         float hunger = player.getHungerManager().getSaturationLevel();
 
+
         if (world.getBlockState(blockPos).isOf(ModBlock.DIRTYSTONE)) {
+            if (player.isCreative()){
+                world.setBlockState(blockPos, ModBlock.DIRTYSTONE_FIRST.getDefaultState());
+                return super.useOnBlock(context);
+            }
             if (energy > 0) {
                 energy--;
             }else {
