@@ -1,6 +1,7 @@
 package net.chen.blocks;
 
 import net.chen.LegacyWorld;
+import net.chen.blocks.crops.Marijuana;
 import net.chen.blocks.devices.Bin;
 import net.chen.blocks.devices.OreWasher;
 import net.chen.blocks.entity.blockentity.SmallChestBlock;
@@ -9,8 +10,10 @@ import net.chen.blocks.ore.CopperOre;
 import net.chen.blocks.ore.IronOre;
 import net.chen.blocks.ore.NoSmokeCoal;
 import net.chen.blocks.stones.DirtyStone;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -31,9 +34,10 @@ public class ModBlock {
     public static final Block H2SO4 = register("sulphuric_acid", new FluidBlock(ModFluid.H2SO4,AbstractBlock.Settings.create()));
     public static final Block H2SO4_FLOWING = register("sulphuric_acid_flowing", new FluidBlock(ModFluid.H2SO4_FLOWING,AbstractBlock.Settings.create()));
     public static final Block Small_Chest = register("small_chest", new SmallChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST), () -> ModBlockEntities.SMALL_CHEST));
+    public static final Block MARIJUANA = Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, "marijuana"), new Marijuana(AbstractBlock.Settings.create().mapColor(MapColor.LIME).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)));
     public static void registerModBlocks(){
         LegacyWorld.LOGGER.info("Registering Blocks");
-
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.MARIJUANA, RenderLayer.getCutout());
         System.gc();
     }
     public static void registerBlockItems(String id, Block block) {

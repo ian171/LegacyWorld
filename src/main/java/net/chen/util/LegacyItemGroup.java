@@ -48,6 +48,9 @@ public class LegacyItemGroup {
                         entries.add(ModItem.GLASS_BUKKIT);
                         entries.add(ModItem.Saltpeter);
                         entries.add(ModBlock.Small_Chest);
+                        entries.add(ModItem.TIN_INGOT);
+                        entries.add(ModItem.RAW_TIN);
+                        entries.add(ModItem.TIN_STONE);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -27,6 +28,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4_FLOWING);
         blockStateModelGenerator.registerSimpleState(ModBlock.Small_Chest);
+        blockStateModelGenerator.registerCrop(ModBlock.MARIJUANA, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
     }
 
     @Override
@@ -53,5 +55,8 @@ public class ModModelsProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItem.GLASS_BUKKIT,Models.GENERATED);
             itemModelGenerator.register(ModItem.Saltpeter,Models.GENERATED);
             itemModelGenerator.register(ModItem.Solvent,Models.GENERATED);
+            itemModelGenerator.register(ModItem.TIN_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItem.TIN_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItem.RAW_TIN, Models.GENERATED);
     }
 }
