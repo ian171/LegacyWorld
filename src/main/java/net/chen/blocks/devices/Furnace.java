@@ -27,6 +27,7 @@ public class Furnace extends Block {
             //player.incrementStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
         }
         return ActionResult.SUCCESS;
+
     }
     @Override
     protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {

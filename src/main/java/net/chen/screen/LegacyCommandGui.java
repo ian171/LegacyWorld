@@ -35,6 +35,7 @@ public class LegacyCommandGui extends Screen {
         context.drawText(this.textRenderer, "Special Button", 40, 40 - this.textRenderer.fontHeight - 10, 0xFFFFFFFF, true);
     }
 
+
     @Override
     public boolean shouldPause() {
         return false;

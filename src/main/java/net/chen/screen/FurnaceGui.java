@@ -12,4 +12,5 @@ public class FurnaceGui extends AbstractFurnaceScreenHandler {
         super(ScreenHandlerType.FURNACE, RecipeType.SMELTING, RecipeBookCategory.FURNACE, syncId, playerInventory);
     }
 
+
 }
