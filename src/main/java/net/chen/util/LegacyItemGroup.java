@@ -51,6 +51,7 @@ public class LegacyItemGroup {
                         entries.add(ModItem.TIN_INGOT);
                         entries.add(ModItem.RAW_TIN);
                         entries.add(ModItem.TIN_STONE);
+                        entries.add(ModBlock.FURNACE);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

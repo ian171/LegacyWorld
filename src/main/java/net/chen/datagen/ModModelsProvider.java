@@ -29,6 +29,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4_FLOWING);
         blockStateModelGenerator.registerSimpleState(ModBlock.Small_Chest);
         blockStateModelGenerator.registerCrop(ModBlock.MARIJUANA, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.FURNACE);
     }
 
     @Override

@@ -7,8 +7,10 @@ import net.chen.blocks.entity.blockentity.SmallChest;
 import net.chen.blocks.entity.blockentity.SmallChestBlock;
 import net.chen.blocks.fluid.ModFluid;
 import net.chen.items.ModItem;
+import net.chen.screen.LegacyCommandGui;
 import net.chen.sounds.ModSoundsEvent;
 import net.chen.util.LegacyItemGroup;
+import net.chen.util.command.LegacyCommands;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -49,6 +51,9 @@ public class LegacyWorld implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		LOGGER.info("Registering Mod Fluids");
 		ModFluid.registerModFluids();
+		LOGGER.info("Registering Mod Commands");
+		LegacyCommands.commandRegister();
+		LegacyCommandGui.init2();
 		LOGGER.info("Done!");
 		long end = System.currentTimeMillis();
         LOGGER.info("Time to load: {}ms", end - start);
