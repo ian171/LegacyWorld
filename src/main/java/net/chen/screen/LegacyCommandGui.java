@@ -2,6 +2,7 @@ package net.chen.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -15,6 +16,7 @@ public class LegacyCommandGui extends Screen {
     }
     @Override
     public void init(){
+        MinecraftClient.getInstance().mouse.lockCursor();
         ButtonWidget buttonWidget =ButtonWidget.builder(Text.of("Click me"), (btn) -> {
             if (this.client != null) {
                 this.client.getToastManager()
@@ -34,14 +36,20 @@ public class LegacyCommandGui extends Screen {
         // textRenderer, text, x, y, color, hasShadow
         context.drawText(this.textRenderer, "Special Button", 40, 40 - this.textRenderer.fontHeight - 10, 0xFFFFFFFF, true);
     }
-
+    @Override
+    public boolean mouseReleased(double mouseX, double mouseY, int button) {
+        if (!super.mouseReleased(mouseX, mouseY, button)) {
+            this.close();
+            return false;
+        }
+        return true;
+    }
 
     @Override
     public boolean shouldPause() {
         return false;
     }
-
-//    @Override
+    //    @Override
 //    public boolean mouseClicked(double mouseX, double mouseY, int button) {
 //        if (!super.mouseClicked(mouseX, mouseY, button)) {
 //            this.close();
@@ -51,8 +59,10 @@ public class LegacyCommandGui extends Screen {
 //    }
 
 
-    public static void init2(){
-
+    @Override
+    public void close() {
+        MinecraftClient.getInstance().mouse.unlockCursor();
+        super.close();
     }
 }
 

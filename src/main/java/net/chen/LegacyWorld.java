@@ -53,7 +53,6 @@ public class LegacyWorld implements ModInitializer {
 		ModFluid.registerModFluids();
 		LOGGER.info("Registering Mod Commands");
 		LegacyCommands.commandRegister();
-		LegacyCommandGui.init2();
 		LOGGER.info("Done!");
 		long end = System.currentTimeMillis();
         LOGGER.info("Time to load: {}ms", end - start);
