@@ -1,5 +1,6 @@
 package net.chen.screen;
 
+import net.chen.util.exceptions.GuiRenderException;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
@@ -22,6 +23,9 @@ public class LegacyCommandGui extends Screen {
                 this.client.getToastManager()
                         .add(SystemToast.create(this.client,
                                 SystemToast.Type.NARRATOR_TOGGLE,Text.of("Hello"), Text.of("World")));
+            }else {
+                System.err.println("Client is null");
+                throw new GuiRenderException("Client is null");
             }
         }).dimensions(40,40,120,20).build();
         this.addDrawableChild(buttonWidget);

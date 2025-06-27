@@ -1,9 +1,9 @@
-// 1.21.1	2025-05-17T15:13:12.903407	LegacyWorld/Model Definitions
+// 1.21.1	2025-06-27T16:51:04.42002	LegacyWorld/Model Definitions
 2719cfa76fe44682d34840d71a61107c2558fa3d assets\legacyworld\models\block\marijuana_stage4.json
 81b06c1a4735371b44fe3e091bd7a2dc82f674fd assets\legacyworld\models\item\copper_sword.json
 a723ebfebd0e33ae32ae11cedd525edcae1f097c assets\legacyworld\models\item\solvent.json
-ef58b2cf35f31afe330d84254d4a9218dc315613 assets\legacyworld\models\item\iron_ingot.json
 d181a8068d2d80d620351b38f020653fed190041 assets\legacyworld\models\item\sulphuric_acid.json
+ef58b2cf35f31afe330d84254d4a9218dc315613 assets\legacyworld\models\item\iron_ingot.json
 15299947862b30a9b626bd31ef88dbdfb2418372 assets\legacyworld\models\item\tin_stone.json
 4121cac47666fc036ce07853b83f6ef155fcc74f assets\legacyworld\models\block\dirty_stone.json
 066cffbf671cf78da4db98dac6c133fa699425a6 assets\legacyworld\blockstates\small_chest.json
@@ -30,12 +30,13 @@ c8d3b473abf4bb9c939d95411201ab32bf5f79df assets\legacyworld\models\item\copper_i
 ad3efd3510b7a0a1324a8efab6670d0b2224e0ba assets\legacyworld\models\block\ore_washer.json
 e47be9be19c4f1cdb81ddde2e8c1477bd1c998b4 assets\legacyworld\models\item\raw_tin.json
 622afab90c763b51c01c2b18f7e4b039a38b975f assets\legacyworld\blockstates\ore_washer.json
-3efac00d928d3cf172bb2835c86c2366636f804a assets\legacyworld\models\item\nickel_stone.json
 c207ca2c285a1722c6fd66973cd0a2253fc9eabc assets\legacyworld\models\block\furnace.json
+3efac00d928d3cf172bb2835c86c2366636f804a assets\legacyworld\models\item\nickel_stone.json
 e29e6db85b53efe4977d414b359c57bce7583e7e assets\legacyworld\models\item\cooper_ore.json
 a3c4104bc44e23500312f9dc077fcd9d098d180d assets\legacyworld\models\item\raw_iron.json
 482ac050de453999a8600ee39efff5a897b95993 assets\legacyworld\models\block\dirty_stone_first.json
 bd254e7c21713c539e7311b57a8b029ef7b2a497 assets\legacyworld\models\block\marijuana_stage1.json
+9f81ebd7f40252610fe4a50459a5e0a525fbb66c assets\legacyworld\models\item\marijuana.json
 f7c4cd2111f9309ce4263e80de127e6f34e89040 assets\legacyworld\models\item\bin.json
 633f04190e1997840dda8a3f24c2bfa61ba48cec assets\legacyworld\models\block\sulfur_ore.json
 1159198cf504c974b0dfd7119097b1e8ef83f032 assets\legacyworld\models\item\sulphuric_acid_flowing.json
@@ -52,10 +53,12 @@ f09179318f9452b86dd2634e536252cab9ff4835 assets\legacyworld\blockstates\iron_ore
 29149c3363ac81f9733b5242a760714d310de24e assets\legacyworld\models\item\zinc_stone.json
 a75882f86206e507cb94041ee56c9a266bf21724 assets\legacyworld\models\item\zinc_ore.json
 cef2d62c7d9ffc975844605692222ed6f8d0dc9b assets\legacyworld\models\item\iron_stone.json
+f723e86351ca52aabf5f4514a0d2767b79213363 assets\legacyworld\models\item\thick_stick.json
 c87d3c23ba6d865b0bcb498a796880b8a47b4296 assets\legacyworld\models\item\raw_copper.json
 ece93112419e15b1084b8ddc962d1baf2c7bc8f2 assets\legacyworld\blockstates\no_smoke_coal_ore.json
 81600ee6299cedf6c081023ac978db669deaca71 assets\legacyworld\models\item\tin_ingot.json
 d6abbae919e1cc41c8181124683a3e604755e005 assets\legacyworld\models\item\dirty_stone_first.json
+656dcd9cddcca2a52ac9c5aef559dac7443ed35e assets\legacyworld\models\item\broken_stick.json
 81fa5327a0453cadcf41e26cc36eaf1373161af6 assets\legacyworld\models\item\small_chest.json
 dce5b091b2a6128f627c9fa571fba3529b7c7728 assets\legacyworld\models\item\iron_sword.json
 ee97144c568e7736c8760e63dc70b16428182129 assets\legacyworld\models\block\marijuana_stage0.json

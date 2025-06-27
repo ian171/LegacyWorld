@@ -35,7 +35,7 @@ public class ModBlock {
     public static final Block H2SO4 = register("sulphuric_acid", new FluidBlock(ModFluid.H2SO4,AbstractBlock.Settings.create()));
     public static final Block H2SO4_FLOWING = register("sulphuric_acid_flowing", new FluidBlock(ModFluid.H2SO4_FLOWING,AbstractBlock.Settings.create()));
     public static final Block Small_Chest = register("small_chest", new SmallChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST), () -> ModBlockEntities.SMALL_CHEST));
-    public static final Block MARIJUANA = Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, "marijuana"), new Marijuana(AbstractBlock.Settings.create().mapColor(MapColor.LIME).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block MARIJUANA = Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, "marijuana"), new Marijuana(AbstractBlock.Settings.create().mapColor(MapColor.LIME)));
     public static final Block FURNACE = register("furnace", new Furnace(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     //public static final Block FURNACE = register("furnace", new ModFurnaceBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     public static void registerModBlocks(){

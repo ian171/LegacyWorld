@@ -47,6 +47,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offer2x2CompactingRecipe(exporter,RecipeCategory.MISC,ModItem.IRON_INGOT,ModItem.IRON_STONE);
         offer2x2CompactingRecipe(exporter,RecipeCategory.MISC,ModItem.ZINC_INGOT,ModItem.IRON_STONE);
         offer2x2CompactingRecipe(exporter,RecipeCategory.MISC,ModItem.COPPER_INGOT,ModItem.COPPER_STONE);
+        offer2x2CompactingRecipe(exporter,RecipeCategory.MISC,ModItem.THICK_STICK,ModItem.BROKEN_STICK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItem.ZINC_INGOT,1)
                 .pattern("#")
                 .pattern("@")

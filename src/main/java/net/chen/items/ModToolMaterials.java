@@ -12,7 +12,8 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
     IRON_INGOT(BlockTags.INCORRECT_FOR_IRON_TOOL, 2031, 12.0f, 4.0f, 50,
             () -> Ingredient.ofItems(ModItem.IRON_INGOT)),
-    COPPER_INGOT(BlockTags.INCORRECT_FOR_IRON_TOOL, 2031, 12.0f, 4.0f, 50, () -> Ingredient.ofItems(ModItem.COPPER_INGOT));
+    COPPER_INGOT(BlockTags.INCORRECT_FOR_IRON_TOOL, 2031, 12.0f, 4.0f, 50, () -> Ingredient.ofItems(ModItem.COPPER_INGOT)),
+    NETHERITE_INGOT(BlockTags.INCORRECT_FOR_IRON_TOOL, 2031, 12.0f, 4.0f, 50, () -> Ingredient.ofItems(ModItem.NEITHER_INGOT));
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
     private final float miningSpeed;

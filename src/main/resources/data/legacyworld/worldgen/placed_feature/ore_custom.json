@@ -1,0 +1,21 @@
+{
+  "feature": "minecraft:blue_ice",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 72
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 12
+    }
+  ]
+}

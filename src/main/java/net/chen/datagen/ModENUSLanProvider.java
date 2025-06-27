@@ -56,6 +56,9 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItem.TIN_INGOT,"锡锭");
         translationBuilder.add(ModItem.TIN_STONE,"锡石");
         translationBuilder.add(ModItem.RAW_TIN,"锡矿石");
+        translationBuilder.add(ModBlock.FURNACE,"熔炉");
         translationBuilder.add(ModBlock.MARIJUANA,"大麻");
+        translationBuilder.add(ModItem.BROKEN_STICK,"断棍");
+        translationBuilder.add(ModItem.THICK_STICK,"粗棍");
     }
 }

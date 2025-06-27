@@ -3,16 +3,12 @@ package net.chen.items;
 import net.chen.LegacyWorld;
 import net.chen.blocks.ModBlock;
 import net.chen.blocks.fluid.ModFluid;
-import net.chen.items.acid.H2SO4;
 import net.chen.items.food.ModFoodComponents;
 import net.chen.items.ore.*;
 import net.chen.items.tools.Chisel;
 import net.chen.items.tools.GlassBukkit;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -46,6 +42,9 @@ public class ModItem {
     public static final Item RAW_TIN = registerItems("raw_tin",new Item(new Item.Settings()));
     public static final Item MARIJUANA_SEED = registerItems("marijuana_seed",new AliasedBlockItem(ModBlock.MARIJUANA, new Item.Settings()));
     public static final Item MARIJUANA = registerItems("marijuana",new Item(new Item.Settings()));
+    public static final Item BROKEN_STICK = registerItems("broken_stick",new Item(new Item.Settings()));
+    public static final Item THICK_STICK = registerItems("thick_stick",new Item(new Item.Settings()));
+    public static final Item NEITHER_INGOT = registerItems("nether_ingot",new Item(new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);

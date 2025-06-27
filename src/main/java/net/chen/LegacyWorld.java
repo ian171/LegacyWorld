@@ -10,6 +10,7 @@ import net.chen.items.ModItem;
 import net.chen.screen.LegacyCommandGui;
 import net.chen.sounds.ModSoundsEvent;
 import net.chen.util.LegacyItemGroup;
+import net.chen.util.NBTHelper;
 import net.chen.util.command.LegacyCommands;
 import net.fabricmc.api.ModInitializer;
 
@@ -53,9 +54,13 @@ public class LegacyWorld implements ModInitializer {
 		ModFluid.registerModFluids();
 		LOGGER.info("Registering Mod Commands");
 		LegacyCommands.commandRegister();
+		LOGGER.info("Registering Mod NBTs");
+		NBTHelper.init();
 		LOGGER.info("Done!");
 		long end = System.currentTimeMillis();
         LOGGER.info("Time to load: {}ms", end - start);
+		System.gc();
+		LOGGER.info("Garbage collected");
 
 
 //		try{

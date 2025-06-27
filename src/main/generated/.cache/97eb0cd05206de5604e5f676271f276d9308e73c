@@ -1,12 +1,14 @@
-// 1.21.1	2025-05-17T15:13:12.8984301	LegacyWorld/Recipes
+// 1.21.1	2025-06-27T16:51:04.41285	LegacyWorld/Recipes
 f6a736c2068d638b05b05292c24dc50a5126b219 data\legacyworld\recipe\iron_ingot_from_smelting_raw_iron.json
 1c75cad56187e69c3c427d2889e8e06fda6f0e1a data\legacyworld\recipe\no_smoke_coal.json
 a1085fa6e8dd672920d6152798388ebc4b74b2e5 data\legacyworld\recipe\iron_ingot_from_stone.json
 00b8fed8a662b7876864ecc2e626c30996b31dd7 data\legacyworld\recipe\iron_sword.json
 dd469ba8d68cf09608dc442f1ea35132f116fcc9 data\legacyworld\advancement\recipes\misc\copper_ingot.json
+1e7c8bc0fb01ebdf48272fe1e3b28190ccd300b0 data\legacyworld\advancement\recipes\misc\thick_stick.json
 b9fa89a4a22ccc1b8765ff23f4cd93432128bd4f data\legacyworld\advancement\recipes\misc\no_smoke_coal.json
 80a31d6d8a028d1d2967ca433a5805f9abe5b31e data\legacyworld\recipe\copper_ingot.json
 7187031db129b160f339c80eaee28b06c05ef137 data\legacyworld\advancement\recipes\misc\iron_ingot_from_stone.json
+63848a7c2efbb4f493089f414af7f625f92a6088 data\legacyworld\recipe\thick_stick.json
 7a5384e1733053a0278b13b7f98f8fb04065ed95 data\legacyworld\advancement\recipes\misc\iron_ingot_from_iron_stone.json
 dc5d93c650927e10bded2319ffa91ad48b1edf35 data\legacyworld\advancement\recipes\misc\zinc_ingot.json
 34e9f23b8f77c96234f068d9e503d21134df4394 data\legacyworld\advancement\recipes\misc\no_smoke_coal_ore.json
