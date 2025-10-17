@@ -53,6 +53,10 @@ public class LegacyItemGroup {
                         entries.add(ModItem.TIN_STONE);
                         entries.add(ModBlock.FURNACE);
                         entries.add(ModItem.BROKEN_STICK);
+                        entries.add(ModItem.ALUMINIUM);
+                        entries.add(ModItem.PHOSPHORUS);
+                        entries.add(ModItem.MANGANESE);
+                        entries.add(ModItem.Molybdenum);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

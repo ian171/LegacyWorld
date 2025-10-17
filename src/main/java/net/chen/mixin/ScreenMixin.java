@@ -9,8 +9,4 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(TitleScreen.class)
 public class ScreenMixin {
 
-    @Inject(at = @At("HEAD"), method = "init()V")
-    public void init(CallbackInfo ci) {
-
-    }
 }

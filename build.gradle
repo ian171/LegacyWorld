@@ -1,8 +1,8 @@
 plugins {
 	id 'fabric-loom' version '1.10-SNAPSHOT'
+
 	id 'maven-publish'
 }
-
 version = project.mod_version
 group = project.maven_group
 
@@ -21,6 +21,10 @@ repositories {
 		name = "Terraformers"
 		url = "https://maven.terraformersmc.com/"
 	}
+	maven {
+		name = 'ParchmentMC'
+		url = 'https://maven.parchmentmc.org'
+	 }
 	maven { url 'https://maven.blamejared.com' }
 }
 

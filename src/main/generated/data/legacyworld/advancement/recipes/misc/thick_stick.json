@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_broken_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "legacyworld:broken_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "legacyworld:thick_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_broken_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legacyworld:thick_stick"
+    ]
+  }
+}

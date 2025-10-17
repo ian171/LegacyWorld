@@ -1,11 +1,11 @@
-// 1.21.1	2025-06-27T16:51:04.4291759	LegacyWorld/Block Loot Tables
-3542c19dc8654ae343b9c942a403d00b2d065bc9 data\legacyworld\loot_table\blocks\marijuana.json
+// 1.21.1	2025-10-17T22:09:46.4592901	LegacyWorld/Block Loot Tables
 6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\azalea_leaves.json
-931345dfc70d38197f79365459ec4190f6096a2e data\legacyworld\loot_table\blocks\dirty_stone_first.json
-6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\acacia_leaves.json
-6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\dark_oak_leaves.json
 6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\cherry_leaves.json
-6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\oak_leaves.json
-6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\jungle_leaves.json
+6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\dark_oak_leaves.json
 6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\birch_leaves.json
+6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\acacia_leaves.json
 6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\spruce_leaves.json
+6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\jungle_leaves.json
+6de8803bcdc18f7ea6d9c001833a676a6346c290 data\minecraft\loot_table\blocks\oak_leaves.json
+3542c19dc8654ae343b9c942a403d00b2d065bc9 data\legacyworld\loot_table\blocks\marijuana.json
+931345dfc70d38197f79365459ec4190f6096a2e data\legacyworld\loot_table\blocks\dirty_stone_first.json

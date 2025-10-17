@@ -45,6 +45,10 @@ public class ModItem {
     public static final Item BROKEN_STICK = registerItems("broken_stick",new Item(new Item.Settings()));
     public static final Item THICK_STICK = registerItems("thick_stick",new Item(new Item.Settings()));
     public static final Item NEITHER_INGOT = registerItems("nether_ingot",new Item(new Item.Settings()));
+    public static final Item ALUMINIUM = registerItems("aluminium",new Aluminum(new Item.Settings()));
+    public static final Item MANGANESE = registerItems("manganese", new Manganese(new Item.Settings()));
+    public static final Item PHOSPHORUS = registerItems("phosphorus",new Phosphorus(new Item.Settings()));
+    public static final Item Molybdenum = registerItems("molybdenum",new Molybdenum(new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);
@@ -52,6 +56,6 @@ public class ModItem {
     public static void registerModItems(){
         LegacyWorld.LOGGER.info("Registering Items");
         FuelRegistry.INSTANCE.add(ModItem.NO_SMOKE_COAL, 1600);
-        System.gc();
+        FuelRegistry.INSTANCE.add(ModItem.PHOSPHORUS,1300);
     }
 }
