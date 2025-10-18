@@ -43,6 +43,7 @@ public class LegacyWorld implements ModInitializer {
 		LOGGER.info("Registering Mod Items");
 		ModItem.registerModItems();
 		LOGGER.info("Items Loaded\nLoading Blocks");
+		net.chen.blocks.entity.blockentity.ModBlockEntities.registerAllBlockEntities();
 		ModBlock.registerModBlocks();
 		LOGGER.info("Blocks Loaded");
 		LegacyItemGroup.registerModItemGroups();

@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-17T22:09:46.4562875	LegacyWorld/Model Definitions
+// 1.21.1	2025-10-18T21:23:59.6165518	LegacyWorld/Model Definitions
 2ae23bae0097bf3983aea22e0e4fc67a12d27802 assets\legacyworld\models\item\molybdenum.json
 a723ebfebd0e33ae32ae11cedd525edcae1f097c assets\legacyworld\models\item\solvent.json
 1700e3a86d128c134be551c6d6241344661b6e84 assets\legacyworld\models\item\ore_washer.json
@@ -13,8 +13,8 @@ c87d3c23ba6d865b0bcb498a796880b8a47b4296 assets\legacyworld\models\item\raw_copp
 96bc87a9d58c98a7d1fd09a2ae3b4a763551bb4e assets\legacyworld\models\item\chicken.json
 9257d2f5fabe7174f74e3ebb8faa09f616a7f20c assets\legacyworld\models\block\sulphuric_acid_flowing.json
 a27cbba74f7ac978c0bcf94d6a7925cabc7d6bca assets\legacyworld\models\block\zinc_ore.json
-29149c3363ac81f9733b5242a760714d310de24e assets\legacyworld\models\item\zinc_stone.json
 10a5930ae40226672c643bfe12cd4587645c6216 assets\legacyworld\models\item\aluminium.json
+29149c3363ac81f9733b5242a760714d310de24e assets\legacyworld\models\item\zinc_stone.json
 633f04190e1997840dda8a3f24c2bfa61ba48cec assets\legacyworld\models\block\sulfur_ore.json
 fd5148faba917dca7797a22854791561affaa172 assets\legacyworld\models\item\dirty_stone.json
 3fffa49230191bd62f35351e240aa22f2176f68e assets\legacyworld\blockstates\bin.json

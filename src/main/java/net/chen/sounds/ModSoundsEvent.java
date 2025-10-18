@@ -14,7 +14,7 @@ public class ModSoundsEvent {
     private static final SoundEvent BLOCK_BREAK = register("block_break");
     private static final SoundEvent BLOCK_STEP = register("block_step");
     private static final SoundEvent BLOCK_HIT = register("block_hit");
-    private static final SoundEvent BLOCK_FALL = register("block_fall");
+    public static final SoundEvent BLOCK_FALL = register("block_fall");
     public static final SoundEvent BLOCK_PLACE = register("block_place");
     private static SoundEvent register(String name) {
         Identifier id = Identifier.of(LegacyWorld.MOD_ID, name);

@@ -39,6 +39,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("item.legacyworld.zinc_stone","锌石");
         translationBuilder.add("block.legacyworld.zinc_ore","锌矿石");
         translationBuilder.add("item.legacyworld.raw_nickel","粗镍");
+        translationBuilder.add("blocktext.furnace","熔炉");
         translationBuilder.add(ModItem.NICKEL_INGOT,"镍锭");
         translationBuilder.add(ModItem.NICKEL_STONE,"镍石");
         //translationBuilder.add("block.legacyworld.nickel_ore","镍矿石");
