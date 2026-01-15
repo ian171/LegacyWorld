@@ -9,11 +9,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -52,6 +50,15 @@ public class  ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         oreDrops(ModBlock.NO_SMOKE_COAL_ORE,ModItem.NO_SMOKE_COAL);
         oreDrops(ModBlock.COOPER_ORE,ModItem.COPPER_STONE);
         addDrop(ModBlock.MARIJUANA,cropDrops(ModBlock.MARIJUANA,ModItem.MARIJUANA,ModItem.MARIJUANA_SEED,builder2));
+        addDrop(ModBlock.DRIFTWOOD_LOG);
+        addDrop(ModBlock.DRIFTWOOD_WOOD);
+        addDrop(ModBlock.STRIPPED_DRIFTWOOD_LOG);
+        addDrop(ModBlock.STRIPPED_DRIFTWOOD_WOOD);
+        addDrop(ModBlock.DRIFTWOOD_PLANKS);
+
+        addDrop(ModBlock.DRIFTWOOD_LEAVES,leavesDrops(ModBlock.DRIFTWOOD_LEAVES,ModBlock.DRIFTWOOD_SAPLING,0.0625f));
+
+
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlock.CAULIFLOWER).properties(StatePredicate.Builder.create().exactMatch(CauliflowerCrops.AGE,6));
         this.addDrop(ModBlock.CAULIFLOWER,this.cropDrops(ModBlock.CAULIFLOWER,ModItem.CAULIFLOWER,ModItem.CAULIFLOWER_SEED,builder));

@@ -17,6 +17,8 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
@@ -64,6 +66,16 @@ public class LegacyWorld implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItem.CAULIFLOWER_SEED,0.4f);
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.CAULIFLOWER,RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.HONEY_BERRY_BUSH,RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
+		StrippableBlockRegistry.register(ModBlock.DRIFTWOOD_LOG, ModBlock.STRIPPED_DRIFTWOOD_LOG);
+		StrippableBlockRegistry.register(ModBlock.DRIFTWOOD_WOOD, ModBlock.STRIPPED_DRIFTWOOD_WOOD);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.DRIFTWOOD_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.DRIFTWOOD_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.STRIPPED_DRIFTWOOD_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.STRIPPED_DRIFTWOOD_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.DRIFTWOOD_PLANKS,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.DRIFTWOOD_LEAVES,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlock.DRIFTWOOD_SAPLING,5,5);
 		ModWorldGeneration.generateModWorldGen();
 		long end = System.currentTimeMillis();
         LOGGER.info("Time to load: {}ms", end - start);

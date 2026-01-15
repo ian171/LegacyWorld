@@ -3,7 +3,6 @@ package net.chen.util;
 import net.chen.LegacyWorld;
 import net.chen.blocks.ModBlock;
 import net.chen.items.ModItem;
-import net.chen.items.food.ModFoodComponents;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -43,11 +42,13 @@ public class LegacyItemGroup {
                         entries.add(ModItem.NICKEL_STONE);
                         entries.add(ModBlock.ORE_WASHER);
                         entries.add(ModItem.Sulfur);
+                        entries.add(ModItem.Solvent);
                         entries.add(ModBlock.SULFUR_ORE);
                         entries.add(ModItem.SULPHURIC_ACID_BOTTLE);
                         entries.add(ModItem.GLASS_BUKKIT);
                         entries.add(ModItem.Saltpeter);
                         entries.add(ModBlock.Small_Chest);
+                        entries.add(ModBlock.TIN_ORE);
                         entries.add(ModItem.TIN_INGOT);
                         entries.add(ModItem.RAW_TIN);
                         entries.add(ModItem.TIN_STONE);
@@ -59,6 +60,13 @@ public class LegacyItemGroup {
                         entries.add(ModItem.Molybdenum);
                         entries.add(ModItem.CAULIFLOWER_SEED);
                         entries.add(ModBlock.HONEY_BERRY_BUSH);
+                        entries.add(ModBlock.DRIFTWOOD_LOG);
+                        entries.add(ModBlock.DRIFTWOOD_WOOD);
+                        entries.add(ModBlock.STRIPPED_DRIFTWOOD_LOG);
+                        entries.add(ModBlock.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlock.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlock.DRIFTWOOD_LEAVES);
+                        entries.add(ModBlock.DRIFTWOOD_SAPLING);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

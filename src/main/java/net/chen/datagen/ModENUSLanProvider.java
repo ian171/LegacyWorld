@@ -1,7 +1,6 @@
 package net.chen.datagen;
 
 import net.chen.blocks.ModBlock;
-import net.chen.blocks.ModBlockEntities;
 import net.chen.items.ModItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -56,6 +55,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItem.Solvent,"助溶剂");
         translationBuilder.add(ModItem.TIN_INGOT,"锡锭");
         translationBuilder.add(ModItem.TIN_STONE,"锡石");
+        translationBuilder.add(ModBlock.TIN_ORE,"锡矿");
         translationBuilder.add(ModItem.RAW_TIN,"锡矿石");
         translationBuilder.add(ModBlock.FURNACE,"熔炉");
         translationBuilder.add(ModBlock.MARIJUANA,"大麻");
@@ -69,5 +69,12 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItem.CAULIFLOWER_SEED,"花椰菜种子");
         translationBuilder.add(ModBlock.CAULIFLOWER,"花椰菜");
         translationBuilder.add(ModItem.HONEY_BERRIES,"蜂蜜莓果实");
+        translationBuilder.add(ModBlock.DRIFTWOOD_LOG,"漂浮原木");
+        translationBuilder.add(ModBlock.DRIFTWOOD_WOOD,"漂浮木");
+        translationBuilder.add(ModBlock.STRIPPED_DRIFTWOOD_LOG,"去皮漂浮原木");
+        translationBuilder.add(ModBlock.STRIPPED_DRIFTWOOD_WOOD,"去皮漂浮木");
+        translationBuilder.add(ModBlock.DRIFTWOOD_PLANKS,"漂浮木木板");
+        translationBuilder.add(ModBlock.DRIFTWOOD_LEAVES,"漂浮木树叶");
+        translationBuilder.add(ModBlock.DRIFTWOOD_SAPLING,"漂浮木树苗");
     }
 }

@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
@@ -24,6 +25,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.NO_SMOKE_COAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.COOPER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ZINC_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.TIN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.BIN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ORE_WASHER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SULFUR_ORE);
@@ -34,6 +36,12 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.FURNACE);
         blockStateModelGenerator.registerCrop(ModBlock.CAULIFLOWER, CauliflowerCrops.AGE,0,1,2,3,4,5,6);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlock.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED, HoneyBerryBushBlock.AGE,0,1,2,3);
+        blockStateModelGenerator.registerLog(ModBlock.DRIFTWOOD_LOG).log(ModBlock.DRIFTWOOD_LOG).wood(ModBlock.DRIFTWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlock.STRIPPED_DRIFTWOOD_LOG).log(ModBlock.STRIPPED_DRIFTWOOD_LOG).wood(ModBlock.STRIPPED_DRIFTWOOD_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.DRIFTWOOD_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlock.DRIFTWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlock.DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 

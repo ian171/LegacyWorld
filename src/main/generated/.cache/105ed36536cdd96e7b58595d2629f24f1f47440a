@@ -1,3 +1,7 @@
-// 1.21.1	2026-01-15T13:38:06.285273	LegacyWorld/
+// 1.21.1	2026-01-15T20:27:16.350737	LegacyWorld/
+0165a36b87943cc29e0472c715cfe78f64627cd0 data/legacyworld/worldgen/placed_feature/driftwood_placed.json
 c2e06a708b753964feac6ee6e7f47351b00d7b08 data/legacyworld/worldgen/configured_feature/zink_ore.json
+f2871d9c7961f62df050787e1f08be2c2f411f70 data/legacyworld/worldgen/configured_feature/driftwood.json
 8ceb5851d5cbcfc1589a11ec7078f867b1cc38b6 data/legacyworld/worldgen/placed_feature/zink_ore_placed.json
+7c6167a47c23b9c72f7d0a7f0bc77b5fd6fafd22 data/legacyworld/worldgen/placed_feature/coal_ore_placed.json
+dfeaeae16cb7594d430289124e138fd8dc3f6923 data/legacyworld/worldgen/configured_feature/coal_ore.json

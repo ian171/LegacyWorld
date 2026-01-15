@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "legacyworld:block/stripped_driftwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "legacyworld:block/stripped_driftwood_wood"
+    },
+    "axis=z": {
+      "model": "legacyworld:block/stripped_driftwood_wood",
+      "x": 90
+    }
+  }
+}

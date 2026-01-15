@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "legacyworld:block/driftwood_sapling"
+  }
+}

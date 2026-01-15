@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "legacyworld:block/driftwood_log",
+    "side": "legacyworld:block/driftwood_log"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "legacyworld:block/driftwood_leaves"
+  }
+}
