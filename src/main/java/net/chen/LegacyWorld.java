@@ -12,9 +12,11 @@ import net.chen.sounds.ModSoundsEvent;
 import net.chen.util.LegacyItemGroup;
 import net.chen.util.NBTHelper;
 import net.chen.util.command.LegacyCommands;
+import net.chen.world.generation.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
@@ -58,6 +60,11 @@ public class LegacyWorld implements ModInitializer {
 		LOGGER.info("Registering Mod NBTs");
 		NBTHelper.init();
 		LOGGER.info("Done!");
+		CompostingChanceRegistry.INSTANCE.add(ModItem.CAULIFLOWER,0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItem.CAULIFLOWER_SEED,0.4f);
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.CAULIFLOWER,RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.HONEY_BERRY_BUSH,RenderLayer.getCutout());
+		ModWorldGeneration.generateModWorldGen();
 		long end = System.currentTimeMillis();
         LOGGER.info("Time to load: {}ms", end - start);
 		System.gc();

@@ -1,6 +1,8 @@
 package net.chen.blocks;
 
 import net.chen.LegacyWorld;
+import net.chen.blocks.bush.HoneyBerryBushBlock;
+import net.chen.blocks.crops.CauliflowerCrops;
 import net.chen.blocks.crops.Marijuana;
 import net.chen.blocks.devices.Bin;
 import net.chen.blocks.devices.Furnace;
@@ -14,11 +16,13 @@ import net.chen.blocks.stones.DirtyStone;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
@@ -38,6 +42,8 @@ public class ModBlock {
     public static final Block MARIJUANA = Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, "marijuana"), new Marijuana(AbstractBlock.Settings.create().mapColor(MapColor.LIME)));
     public static final Block FURNACE = register("furnace", new Furnace(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
     //public static final Block FURNACE = register("furnace", new ModFurnaceBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(0.8f, 0.7f).requiresTool()));
+    public static final Block CAULIFLOWER = registerWithoutItem("cauliflower_crop",new CauliflowerCrops(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block HONEY_BERRY_BUSH = registerWithoutItem("honey_berry_bush",new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
     public static void registerModBlocks(){
         LegacyWorld.LOGGER.info("Registering Blocks");
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.MARIJUANA, RenderLayer.getCutout());
@@ -52,6 +58,10 @@ public class ModBlock {
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, id), block);
+    }
+
+    public static Block registerWithoutItem(String id, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(LegacyWorld.MOD_ID, id), block);
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "legacyworld:block/honey_berry_bush_stage1"
+  }
+}

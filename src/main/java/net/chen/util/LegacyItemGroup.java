@@ -57,6 +57,8 @@ public class LegacyItemGroup {
                         entries.add(ModItem.PHOSPHORUS);
                         entries.add(ModItem.MANGANESE);
                         entries.add(ModItem.Molybdenum);
+                        entries.add(ModItem.CAULIFLOWER_SEED);
+                        entries.add(ModBlock.HONEY_BERRY_BUSH);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

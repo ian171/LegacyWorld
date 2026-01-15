@@ -8,6 +8,7 @@ import net.chen.items.ore.*;
 import net.chen.items.tools.Chisel;
 import net.chen.items.tools.GlassBukkit;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -49,6 +50,9 @@ public class ModItem {
     public static final Item MANGANESE = registerItems("manganese", new Manganese(new Item.Settings()));
     public static final Item PHOSPHORUS = registerItems("phosphorus",new Phosphorus(new Item.Settings()));
     public static final Item Molybdenum = registerItems("molybdenum",new Molybdenum(new Item.Settings()));
+    public static final Item CAULIFLOWER = registerItems("cauliflower",new Item(new Item.Settings()));
+    public static final Item CAULIFLOWER_SEED = registerItems("cauliflower_seed",new AliasedBlockItem(ModBlock.CAULIFLOWER, new Item.Settings()));
+    public static final Item HONEY_BERRIES = registerItems("honey_berries",new AliasedBlockItem(ModBlock.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);

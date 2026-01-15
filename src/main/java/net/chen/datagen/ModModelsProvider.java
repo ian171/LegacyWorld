@@ -1,6 +1,8 @@
 package net.chen.datagen;
 
 import net.chen.blocks.ModBlock;
+import net.chen.blocks.bush.HoneyBerryBushBlock;
+import net.chen.blocks.crops.CauliflowerCrops;
 import net.chen.items.ModItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -30,6 +32,9 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(ModBlock.Small_Chest);
         blockStateModelGenerator.registerCrop(ModBlock.MARIJUANA, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.FURNACE);
+        blockStateModelGenerator.registerCrop(ModBlock.CAULIFLOWER, CauliflowerCrops.AGE,0,1,2,3,4,5,6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlock.HONEY_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED, HoneyBerryBushBlock.AGE,0,1,2,3);
+
     }
 
     @Override
@@ -66,6 +71,7 @@ public class ModModelsProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItem.PHOSPHORUS,Models.GENERATED);
             itemModelGenerator.register(ModItem.MANGANESE,Models.GENERATED);
             itemModelGenerator.register(ModItem.Molybdenum,Models.GENERATED);
+            itemModelGenerator.register(ModItem.CAULIFLOWER,Models.GENERATED);
             //itemModelGenerator.register(ModItem.MARIJUANA_SEED,Models.GENERATED);
     }
 }

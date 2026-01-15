@@ -65,5 +65,9 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItem.ALUMINIUM,"铝碎石");
         translationBuilder.add(ModItem.MANGANESE,"锰碎石");
         translationBuilder.add(ModItem.Molybdenum,"钼碎石");
+        translationBuilder.add(ModItem.CAULIFLOWER,"花椰菜");
+        translationBuilder.add(ModItem.CAULIFLOWER_SEED,"花椰菜种子");
+        translationBuilder.add(ModBlock.CAULIFLOWER,"花椰菜");
+        translationBuilder.add(ModItem.HONEY_BERRIES,"蜂蜜莓果实");
     }
 }
