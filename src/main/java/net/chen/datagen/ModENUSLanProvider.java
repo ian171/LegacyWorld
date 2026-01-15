@@ -1,6 +1,7 @@
 package net.chen.datagen;
 
 import net.chen.blocks.ModBlock;
+import net.chen.entity.ModEntities;
 import net.chen.items.ModItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -76,5 +77,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlock.DRIFTWOOD_PLANKS,"漂浮木木板");
         translationBuilder.add(ModBlock.DRIFTWOOD_LEAVES,"漂浮木树叶");
         translationBuilder.add(ModBlock.DRIFTWOOD_SAPLING,"漂浮木树苗");
+        translationBuilder.add(ModItem.MANTIS_SPAWN_EGG,"生成 螳螂");
+        translationBuilder.add(ModEntities.MANTIS,"螳螂");
     }
 }

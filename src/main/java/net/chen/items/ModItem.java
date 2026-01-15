@@ -3,6 +3,7 @@ package net.chen.items;
 import net.chen.LegacyWorld;
 import net.chen.blocks.ModBlock;
 import net.chen.blocks.fluid.ModFluid;
+import net.chen.entity.ModEntities;
 import net.chen.items.food.ModFoodComponents;
 import net.chen.items.ore.*;
 import net.chen.items.tools.Chisel;
@@ -53,6 +54,7 @@ public class ModItem {
     public static final Item CAULIFLOWER = registerItems("cauliflower",new Item(new Item.Settings()));
     public static final Item CAULIFLOWER_SEED = registerItems("cauliflower_seed",new AliasedBlockItem(ModBlock.CAULIFLOWER, new Item.Settings()));
     public static final Item HONEY_BERRIES = registerItems("honey_berries",new AliasedBlockItem(ModBlock.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
+    public static final Item MANTIS_SPAWN_EGG = registerItems("mantis_spawn_egg", new SpawnEggItem(ModEntities.MANTIS,0x9dc783,0xbfaf5f,new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegacyWorld.MOD_ID, id), item);

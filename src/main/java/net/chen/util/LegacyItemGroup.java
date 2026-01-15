@@ -67,6 +67,7 @@ public class LegacyItemGroup {
                         entries.add(ModBlock.DRIFTWOOD_PLANKS);
                         entries.add(ModBlock.DRIFTWOOD_LEAVES);
                         entries.add(ModBlock.DRIFTWOOD_SAPLING);
+                        entries.add(ModItem.MANTIS_SPAWN_EGG);
                     }).build());
     public static void registerModItemGroups() {
         LegacyWorld.LOGGER.info("Registering Item Groups"+TUTORIAL_GROUP.toString());

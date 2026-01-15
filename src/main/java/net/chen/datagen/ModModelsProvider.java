@@ -6,11 +6,11 @@ import net.chen.blocks.crops.CauliflowerCrops;
 import net.chen.items.ModItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -80,6 +80,9 @@ public class ModModelsProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItem.MANGANESE,Models.GENERATED);
             itemModelGenerator.register(ModItem.Molybdenum,Models.GENERATED);
             itemModelGenerator.register(ModItem.CAULIFLOWER,Models.GENERATED);
-            //itemModelGenerator.register(ModItem.MARIJUANA_SEED,Models.GENERATED);
+            itemModelGenerator.register(ModItem.MANTIS_SPAWN_EGG,
+                    new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+
+        //itemModelGenerator.register(ModItem.MARIJUANA_SEED,Models.GENERATED);
     }
 }
