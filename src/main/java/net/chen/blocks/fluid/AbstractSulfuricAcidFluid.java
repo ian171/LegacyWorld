@@ -1,7 +1,7 @@
 package net.chen.blocks.fluid;
 
 import net.chen.blocks.ModBlock;
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.Fluid;
@@ -27,7 +27,7 @@ public abstract class AbstractSulfuricAcidFluid extends AbstractModFluid {
 
     @Override
     public Item getBucketItem() {
-        return ModItem.SULPHURIC_ACID_BOTTLE;
+        return ModItems.SULPHURIC_ACID_BOTTLE;
     }
 
     @Override

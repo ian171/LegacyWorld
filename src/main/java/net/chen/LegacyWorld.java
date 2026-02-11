@@ -1,21 +1,17 @@
 package net.chen;
 
-import com.sun.jna.platform.unix.X11;
 import net.chen.blocks.ModBlock;
 import net.chen.blocks.ModBlockEntities;
-import net.chen.blocks.entity.blockentity.SmallChest;
-import net.chen.blocks.entity.blockentity.SmallChestBlock;
 import net.chen.blocks.fluid.ModFluid;
 import net.chen.entity.ModEntities;
-import net.chen.entity.client.MantisModel;
-import net.chen.entity.client.MantisRenderer;
+import net.chen.entity.client.*;
 import net.chen.entity.custom.MantisEntity;
-import net.chen.items.ModItem;
-import net.chen.screen.LegacyCommandGui;
+import net.chen.items.ModItems;
 import net.chen.sounds.ModSoundsEvent;
 import net.chen.util.LegacyItemGroup;
 import net.chen.util.NBTHelper;
 import net.chen.util.command.LegacyCommands;
+import net.chen.villager.ModVillagers;
 import net.chen.world.generation.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,14 +22,9 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import oshi.hardware.Display;
 
 public class LegacyWorld implements ModInitializer {
 	public static final String MOD_ID = "legacyworld";
@@ -52,7 +43,7 @@ public class LegacyWorld implements ModInitializer {
 		long start = System.currentTimeMillis();
 		LOGGER.info("Welcome to LegacyWorld");
 		LOGGER.info("Registering Mod Items");
-		ModItem.registerModItems();
+		ModItems.registerModItems();
 		LOGGER.info("Items Loaded\nLoading Blocks");
 		net.chen.blocks.entity.blockentity.ModBlockEntities.registerAllBlockEntities();
 		ModBlock.registerModBlocks();
@@ -63,9 +54,14 @@ public class LegacyWorld implements ModInitializer {
 		LOGGER.info("Registering Mod Block Entities");
 		ModBlockEntities.registerBlockEntities();
 		ModEntities.registerModEntities();
+		ModVillagers.registerVillagers();
 		//FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 		EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS,MantisModel::getTexturedModelData);
 		EntityRendererRegistry.register(ModEntities.MANTIS,MantisRenderer::new);
+
+		EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
+		EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+		EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
 		LOGGER.info("Registering Mod Fluids");
 		ModFluid.registerModFluids();
 		LOGGER.info("Registering Mod Commands");
@@ -73,8 +69,8 @@ public class LegacyWorld implements ModInitializer {
 		LOGGER.info("Registering Mod NBTs");
 		NBTHelper.init();
 		LOGGER.info("Done!");
-		CompostingChanceRegistry.INSTANCE.add(ModItem.CAULIFLOWER,0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItem.CAULIFLOWER_SEED,0.4f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER,0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEED,0.4f);
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.CAULIFLOWER,RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.HONEY_BERRY_BUSH,RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlock.DRIFTWOOD_SAPLING, RenderLayer.getCutout());

@@ -1,7 +1,7 @@
 package net.chen.datagen;
 
 import net.chen.blocks.ModBlock;
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.chen.tags.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -19,9 +19,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ItemTags.IRON_ORES).add(ModItem.IRON_INGOT);
-        getOrCreateTagBuilder(ItemTags.IRON_ORES).add(ModItem.IRON_STONE);
-        getOrCreateTagBuilder(ModItemTags.RAW_ORES).add(ModItem.RAW_IRON, ModItem.RAW_ZINC, ModItem.RAW_TIN, ModItem.RAW_NICKEL);
+        getOrCreateTagBuilder(ItemTags.IRON_ORES).add(ModItems.IRON_INGOT);
+        getOrCreateTagBuilder(ItemTags.IRON_ORES).add(ModItems.IRON_STONE);
+        getOrCreateTagBuilder(ModItemTags.RAW_ORES).add(ModItems.RAW_IRON, ModItems.RAW_ZINC, ModItems.RAW_TIN, ModItems.RAW_NICKEL);
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlock.DRIFTWOOD_LOG.asItem())
                 .add(ModBlock.DRIFTWOOD_WOOD.asItem())

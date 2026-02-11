@@ -17,6 +17,7 @@ public class ModBlockEntities {
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(LegacyWorld.MOD_ID, id), builder.build(type));
     }
     public static final BlockEntityType<SmallChest> SMALL_CHEST = create("small_chest", BlockEntityType.Builder.create(SmallChest::new, ModBlock.Small_Chest));
+
     public static void registerBlockEntities() {
         LegacyWorld.LOGGER.info("Registering Block Entities for Legacy World");
     }

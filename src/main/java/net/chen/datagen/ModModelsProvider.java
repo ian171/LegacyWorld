@@ -3,7 +3,7 @@ package net.chen.datagen;
 import net.chen.blocks.ModBlock;
 import net.chen.blocks.bush.HoneyBerryBushBlock;
 import net.chen.blocks.crops.CauliflowerCrops;
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -29,6 +29,10 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.BIN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.ORE_WASHER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SULFUR_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.LEAD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.SILVER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.TUNGSTEN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlock.COBALT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlock.H2SO4_FLOWING);
         blockStateModelGenerator.registerSimpleState(ModBlock.Small_Chest);
@@ -43,46 +47,59 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlock.DRIFTWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlock.DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlock.CHAIR);
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-            itemModelGenerator.register(ModItem.chicken, Models.GENERATED);
-            itemModelGenerator.register(ModItem.chisel, Models.GENERATED);
-            itemModelGenerator.register(ModItem.IRON_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItem.IRON_STONE, Models.GENERATED);
-            itemModelGenerator.register(ModItem.RAW_IRON, Models.GENERATED);
-            itemModelGenerator.register(ModItem.NO_SMOKE_COAL, Models.GENERATED);
-            itemModelGenerator.register(ModItem.RAW_COPPER, Models.GENERATED);
-            itemModelGenerator.register(ModItem.COPPER_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItem.COPPER_STONE, Models.GENERATED);
-            itemModelGenerator.register(ModItem.IRON_SWORD, Models.GENERATED);
-            itemModelGenerator.register(ModItem.COPPER_SWORD, Models.GENERATED);
-            itemModelGenerator.register(ModItem.RAW_ZINC, Models.GENERATED);
-            itemModelGenerator.register(ModItem.ZINC_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItem.ZINC_STONE, Models.GENERATED);
-            itemModelGenerator.register(ModItem.RAW_NICKEL, Models.GENERATED);
-            itemModelGenerator.register(ModItem.NICKEL_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItem.NICKEL_STONE, Models.GENERATED);
-            itemModelGenerator.register(ModItem.Sulfur,Models.GENERATED);
-            itemModelGenerator.register(ModItem.SULPHURIC_ACID_BOTTLE,Models.GENERATED);
-            itemModelGenerator.register(ModItem.GLASS_BUKKIT,Models.GENERATED);
-            itemModelGenerator.register(ModItem.Saltpeter,Models.GENERATED);
-            itemModelGenerator.register(ModItem.Solvent,Models.GENERATED);
-            itemModelGenerator.register(ModItem.TIN_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItem.TIN_STONE, Models.GENERATED);
-            itemModelGenerator.register(ModItem.RAW_TIN, Models.GENERATED);
-            itemModelGenerator.register(ModItem.BROKEN_STICK, Models.GENERATED);
-            itemModelGenerator.register(ModItem.THICK_STICK,Models.GENERATED);
-            itemModelGenerator.register(ModItem.MARIJUANA,Models.GENERATED);
-            itemModelGenerator.register(ModItem.ALUMINIUM,Models.GENERATED);
-            itemModelGenerator.register(ModItem.PHOSPHORUS,Models.GENERATED);
-            itemModelGenerator.register(ModItem.MANGANESE,Models.GENERATED);
-            itemModelGenerator.register(ModItem.Molybdenum,Models.GENERATED);
-            itemModelGenerator.register(ModItem.CAULIFLOWER,Models.GENERATED);
-            itemModelGenerator.register(ModItem.MANTIS_SPAWN_EGG,
+            itemModelGenerator.register(ModItems.chicken, Models.GENERATED);
+            itemModelGenerator.register(ModItems.chisel, Models.GENERATED);
+            itemModelGenerator.register(ModItems.IRON_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.IRON_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_IRON, Models.GENERATED);
+            itemModelGenerator.register(ModItems.NO_SMOKE_COAL, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_COPPER, Models.GENERATED);
+            itemModelGenerator.register(ModItems.COPPER_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.COPPER_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.IRON_SWORD, Models.GENERATED);
+            itemModelGenerator.register(ModItems.COPPER_SWORD, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_ZINC, Models.GENERATED);
+            itemModelGenerator.register(ModItems.ZINC_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.ZINC_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_NICKEL, Models.GENERATED);
+            itemModelGenerator.register(ModItems.NICKEL_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.NICKEL_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_LEAD, Models.GENERATED);
+            itemModelGenerator.register(ModItems.LEAD_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.LEAD_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_SILVER, Models.GENERATED);
+            itemModelGenerator.register(ModItems.SILVER_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.SILVER_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_TUNGSTEN, Models.GENERATED);
+            itemModelGenerator.register(ModItems.TUNGSTEN_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.TUNGSTEN_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_COBALT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.COBALT_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.COBALT_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.Sulfur,Models.GENERATED);
+            itemModelGenerator.register(ModItems.SULPHURIC_ACID_BOTTLE,Models.GENERATED);
+            itemModelGenerator.register(ModItems.GLASS_BUKKIT,Models.GENERATED);
+            itemModelGenerator.register(ModItems.Saltpeter,Models.GENERATED);
+            itemModelGenerator.register(ModItems.Solvent,Models.GENERATED);
+            itemModelGenerator.register(ModItems.TIN_INGOT, Models.GENERATED);
+            itemModelGenerator.register(ModItems.TIN_STONE, Models.GENERATED);
+            itemModelGenerator.register(ModItems.RAW_TIN, Models.GENERATED);
+            itemModelGenerator.register(ModItems.BROKEN_STICK, Models.GENERATED);
+            itemModelGenerator.register(ModItems.THICK_STICK,Models.GENERATED);
+            itemModelGenerator.register(ModItems.MARIJUANA,Models.GENERATED);
+            itemModelGenerator.register(ModItems.ALUMINIUM,Models.GENERATED);
+            itemModelGenerator.register(ModItems.PHOSPHORUS,Models.GENERATED);
+            itemModelGenerator.register(ModItems.MANGANESE,Models.GENERATED);
+            itemModelGenerator.register(ModItems.Molybdenum,Models.GENERATED);
+            itemModelGenerator.register(ModItems.CAULIFLOWER,Models.GENERATED);
+            itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                     new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-
         //itemModelGenerator.register(ModItem.MARIJUANA_SEED,Models.GENERATED);
     }
 }

@@ -1,6 +1,6 @@
 package net.chen.blocks.crops;
 
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -29,7 +29,7 @@ public class CauliflowerCrops extends CropBlock {
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItem.CAULIFLOWER_SEED;
+        return ModItems.CAULIFLOWER_SEED;
     }
 
     @Override

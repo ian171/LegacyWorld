@@ -1,12 +1,11 @@
 package net.chen.blocks.bush;
 
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -23,7 +22,7 @@ public class HoneyBerryBushBlock extends SweetBerryBushBlock {
 
     @Override
     public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItem.HONEY_BERRIES);
+        return new ItemStack(ModItems.HONEY_BERRIES);
     }
 
     @Override
@@ -33,7 +32,7 @@ public class HoneyBerryBushBlock extends SweetBerryBushBlock {
         boolean bl2 = bl = i == 3;
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            SweetBerryBushBlock.dropStack(world, pos, new ItemStack(ModItem.HONEY_BERRIES, j + (bl ? 1 : 0)));
+            SweetBerryBushBlock.dropStack(world, pos, new ItemStack(ModItems.HONEY_BERRIES, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
             BlockState blockState = (BlockState)state.with(AGE, 1);
             world.setBlockState(pos, blockState, Block.NOTIFY_LISTENERS);

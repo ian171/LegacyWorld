@@ -1,6 +1,6 @@
 package net.chen.blocks.crops;
 
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -34,6 +34,6 @@ public class Marijuana extends CropBlock {
     }
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItem.MARIJUANA_SEED;
+        return ModItems.MARIJUANA_SEED;
     }
 }

@@ -1,7 +1,7 @@
 package net.chen.items.tools;
 
 import net.chen.blocks.ModBlock;
-import net.chen.items.ModItem;
+import net.chen.items.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,7 +27,7 @@ public class GlassBukkit extends Item {
             if (blockState.getBlock() == ModBlock.H2SO4) {
                 world.setBlockState(blockPos, Blocks.AIR.getDefaultState());
                     player.sendMessage(Text.of("H2SO4"));
-                    player.getInventory().setStack(player.getInventory().selectedSlot, new ItemStack(ModItem.SULPHURIC_ACID_BOTTLE, 1));
+                    player.getInventory().setStack(player.getInventory().selectedSlot, new ItemStack(ModItems.SULPHURIC_ACID_BOTTLE, 1));
             }
         }
         player=null;
