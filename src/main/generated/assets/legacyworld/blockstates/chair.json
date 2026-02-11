@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "legacyworld:block/chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "legacyworld:block/chair"
+    },
+    "facing=south": {
+      "model": "legacyworld:block/chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "legacyworld:block/chair",
+      "y": 270
+    }
+  }
+}

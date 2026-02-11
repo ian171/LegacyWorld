@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 1.0,
+  "group": "tungsten_ore",
+  "ingredient": {
+    "item": "legacyworld:raw_tungsten"
+  },
+  "result": {
+    "id": "legacyworld:tungsten_ingot"
+  }
+}

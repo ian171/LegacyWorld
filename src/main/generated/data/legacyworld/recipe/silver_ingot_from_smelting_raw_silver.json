@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.8,
+  "group": "silver_ore",
+  "ingredient": {
+    "item": "legacyworld:raw_silver"
+  },
+  "result": {
+    "id": "legacyworld:silver_ingot"
+  }
+}

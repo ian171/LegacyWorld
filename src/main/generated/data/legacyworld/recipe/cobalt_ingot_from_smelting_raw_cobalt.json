@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.8,
+  "group": "cobalt_ore",
+  "ingredient": {
+    "item": "legacyworld:raw_cobalt"
+  },
+  "result": {
+    "id": "legacyworld:cobalt_ingot"
+  }
+}
